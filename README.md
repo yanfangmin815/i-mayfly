@@ -7,6 +7,7 @@
 
 ```
 npm i -S i-mayfly
+
 ```
 
 ## 怎么使用？ How to use i-mayfly
