@@ -20,7 +20,7 @@ import "i-mayfly/lib/sass/normal.scss";
 // webpack.config.js
 {
     test: /\.scss$/,
-    use: [MiniCssExtractPlugin.loader, 'css-loader', "postcss-loader", 'sass-loader']
+    use: ['css-loader', "postcss-loader", 'sass-loader']
 }
 ```
 
