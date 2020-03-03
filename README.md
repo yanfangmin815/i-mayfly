@@ -1,7 +1,7 @@
 
 ## 简介 i-mayfly Description
 
->i-mayfly的理念是打造一个组件种子库，参考SluckyUI做了实现
+> i-mayfly component base on react
 
 ## 安装 Install
 
