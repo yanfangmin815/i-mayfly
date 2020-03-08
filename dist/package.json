@@ -1,12 +1,12 @@
 {
   "name": "i-mayfly",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "mayflyUI component base on react",
   "main": "lib/index.js",
-  "homepage": "https://github.com/yanfangmin815/mayfly",
+  "homepage": "https://github.com/yanfangmin815/i-mayfly",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yanfangmin815/mayfly"
+    "url": "https://github.com/yanfangmin815/i-mayfly"
   },
   "scripts": {
     "test": "jest --coverage",

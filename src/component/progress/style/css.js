@@ -1,0 +1,1 @@
+import '../../../sass/normal-thin.scss'

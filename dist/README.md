@@ -1,12 +1,13 @@
 
 ## 简介 i-mayfly Description
 
->i-mayfly的理念是打造一个组件种子库，参考SluckyUI做了实现
+> i-mayfly component base on react
 
 ## 安装 Install
 
 ```
 npm i -S i-mayfly
+
 ```
 
 ## 怎么使用？ How to use i-mayfly
@@ -20,7 +21,7 @@ import "i-mayfly/lib/sass/normal.scss";
 // webpack.config.js
 {
     test: /\.scss$/,
-    use: [MiniCssExtractPlugin.loader, 'css-loader', "postcss-loader", 'sass-loader']
+    use: ['css-loader', "postcss-loader", 'sass-loader']
 }
 ```
 
@@ -119,7 +120,7 @@ $tab_active_color:$theme_color;
 
 ```
 
-## How to use mayfly-design for React
+## How to use i-mayfly for React
 
 ```
 // ex: 
