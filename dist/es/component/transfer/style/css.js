@@ -1,2 +1,1 @@
-import '../../../sass/normal-thin.scss'
-import '../../../sass/_input.scss'
+import '../../../sass/transfer/index.scss'

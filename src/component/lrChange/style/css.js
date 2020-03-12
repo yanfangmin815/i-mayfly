@@ -1,1 +1,1 @@
-import '../../../sass/normal-thin.scss'
+import '../../../sass/lrChange/index.scss'

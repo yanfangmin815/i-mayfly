@@ -1,2 +1,1 @@
-import '../../../sass/normal-thin.scss'
-import '../../../sass/_paging.scss'
+import '../../../sass/paging/index.scss'
