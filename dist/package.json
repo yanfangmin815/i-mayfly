@@ -1,6 +1,6 @@
 {
   "name": "i-mayfly",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "mayflyUI component base on react",
   "main": "lib/index.js",
   "homepage": "https://github.com/yanfangmin815/i-mayfly",

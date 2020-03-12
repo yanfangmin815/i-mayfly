@@ -182,7 +182,7 @@ $tab_active_color:$theme_color !default;
         outline: none !important;
     }
 }
-@import '../_varConfig.scss';
+@import '../style/_varConfig.scss';
 @import '../mixin/mixin.scss';
 @import '../style/_input.scss';
 
