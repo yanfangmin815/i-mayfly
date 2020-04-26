@@ -10,7 +10,6 @@ module.exports = {
         filename: (chunkData) => {
             let filePath = chunkData.chunk.name;
             const filename = filePath.replace('.jsx', '.js');
-            // console.log('output_filename', filename);
             return filename;
         },
         path: __dirname + '/dist/lib',
@@ -20,10 +19,10 @@ module.exports = {
         function(context, request, callback) {
             // 允许编译以下后缀文件
             if (/.jsx|.jpg|.png|.gif|.svg|.jpeg|.js$/g.test(request)) {
-                console.log('filter_Request', request);
-                return callback();
+                // console.log('filter_Request', request);
+                return callback(null, request);
             }
-            callback(null, request);
+            callback(); 
         }
     ],
     resolve: {
@@ -106,6 +105,6 @@ function getEntryConfig() {
         const filePath = item.replace('./src', '');
         entryObj[filePath] = path.resolve(__dirname, item);
     });
-    console.log(entryObj, '>>>>>>>>>>');
+    // console.log(getFileCollectionIndex(), '>>>>>>>>>>');
     return entryObj;
 }

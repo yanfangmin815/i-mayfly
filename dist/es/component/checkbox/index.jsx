@@ -6,6 +6,7 @@ export default class Checkbox extends Component {
         this.id = Math.random().toString(36).substring(2);
     }
 
+    
     handleChange(e) {
         this.props.onChange(e);
     }

@@ -1,5 +1,5 @@
 
-## 简介 i-mayfly Description
+## 简介 Description
 
 > i-mayfly component base on react
 
