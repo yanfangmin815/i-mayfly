@@ -184,11 +184,13 @@ $tab_active_color:$theme_color !default;
 }
 @import '../style/_varConfig.scss';
 @import '../mixin/mixin.scss';
+@import '../style/_reset.scss';
 @import '../style/_table.scss';
 
 // ----------------------------------基础布局样式----------------------------------------
 $space: 2;
 
+// padding系列
 @for $i from 0 to 128 {
     $p_var: $i*$space;
 
@@ -223,6 +225,7 @@ $space: 2;
     }
 }
 
+// margin系列
 @for $i from 0 to 128 {
     $p_var: $i*$space;
 
@@ -265,7 +268,7 @@ $space: 2;
     }
 }
 
-@for $i from 0 to 17 {
+@for $i from 0 to 50 {
     $h_var: $i*32;
 
     .h#{$h_var} {
@@ -307,6 +310,14 @@ $space: 2;
     overflow: auto;
 }
 
+.ov-a-x {
+    overflow-x: auto;
+}
+
+.ov-a-y {
+    overflow-y: auto;
+}
+
 // display系列
 .d-il {
     display: inline-block;
@@ -346,8 +357,15 @@ $space: 2;
 }
 
 // 高度系列
+.h-full {
+    height: 100%;
+}
 .h48 {
     height: 48px;
+}
+
+.h50 {
+    height: 50px;
 }
 
 .h56 {
@@ -954,18 +972,26 @@ details {
     }
 }
 
+// ::-webkit-scrollbar 滚动条整体部分
+// ::-webkit-scrollbar-thumb  滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+// ::-webkit-scrollbar-track  滚动条的轨道（里面装有Thumb）
+// ::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+// ::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+// ::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+// ::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+
 [scrollbar='normal']::-webkit-scrollbar {
     /*滚动条整体样式*/
     width: 2px;
     /*高宽分别对应横竖滚动条的尺寸*/
-    height: 8px;
+    height: 4px;
 }
 
 [scrollbar='normal']::-webkit-scrollbar-thumb {
     /*滚动条里面小方块*/
     border-radius: 2px;
     /* -webkit-box-shadow: inset 0 0 5px #fafafa; */
-    background: #f4f4f4;
+    background: grey;
 }
 
 [scrollbar='normal']::-webkit-scrollbar-track {

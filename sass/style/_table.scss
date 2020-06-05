@@ -157,9 +157,7 @@ $tab_active_color:$theme_color !default;
         height: 100%;
         border-radius: 200px;
         background-color: rgba($color:$hoverColor, $alpha: .1);
-        // background-color: $hoverColor;
         transition: all .3s;
-        // z-index: -1;
     }
 
     &:hover {
@@ -230,7 +228,6 @@ $tab_active_color:$theme_color !default;
 
 .table-list:hover {
     background-color: $table_hover;
-    // border-left: 2px #26a597 solid;
 }
 
 .w80 {
@@ -528,4 +525,16 @@ table {
 
         }
     }
+}
+
+.c-loading {
+    position: relative;
+    display: inline-block;
+    font-size: 35px;
+    width: 1em;
+    height: 1em;
+}
+
+.pop-box {
+    display: inline-block;
 }
