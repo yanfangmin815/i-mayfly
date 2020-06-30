@@ -182,9 +182,6 @@ $tab_active_color:$theme_color !default;
         outline: none !important;
     }
 }
-@import '../style/_varConfig.scss';
-@import '../mixin/mixin.scss';
-@import '../style/_tab.scss';
 
 // ----------------------------------基础布局样式----------------------------------------
 $space: 2;
@@ -519,10 +516,17 @@ $space: 2;
     border-top: solid 1px;
 }
 
+.bor-b-opacity {
+    border-bottom: 2px solid transparent;
+}
+
+.bor-t-opacity {
+    border-top: 2px solid transparent;
+}
+
 .bor-b {
     border-bottom: solid 1px;
 }
-
 .bor-l {
     border-left: solid 1px;
 }
@@ -982,3 +986,7 @@ details {
         background-color: rgba($color:$theme_color, $alpha: .1);
     }
 }
+
+@import '../style/_varConfig.scss';
+@import '../mixin/mixin.scss';
+@import '../style/_tree.scss';

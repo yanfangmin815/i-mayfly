@@ -1,0 +1,26 @@
+.border-bottom {
+    border-bottom: 2px solid #26a597;
+}
+
+.border-top {
+    border-top: 2px solid#26a597;
+}
+
+.on-over {
+    background-color: #26a597;
+    color: #fff;
+}
+
+.tree-branch-node-close {
+    transition: transform .3s;
+    transform:rotate(-90deg);
+}
+
+.tree-branch-node-open {
+    transition: transform .3s;
+    transform:rotate(0deg);
+}
+
+.svg-size {
+    width: 10px;
+}
